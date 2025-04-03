@@ -1,0 +1,29 @@
+:root{
+
+}
+body{
+    min-height: 0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    min-width: 1200px;
+    margin: 0;
+    h1{
+        display: flex;
+        text-align: left;
+        text-align: start;
+        a{
+            font-size: 20px;
+        }
+    }
+    ul{
+        display: flex;
+        li{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+
+}
