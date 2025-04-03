@@ -5,7 +5,7 @@ import "../styles/layout.scss"
 export default function Layout({children}){
     return(
         <>       
-         <header>
+         <header className="header-content">
             <h1><Link to="/">GRUPPENAVN</Link></h1>
             <nav>
                 <ul>
