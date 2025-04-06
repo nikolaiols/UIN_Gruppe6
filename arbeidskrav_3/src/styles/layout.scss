@@ -1,5 +1,8 @@
-
+html{
+    background-color: white;
+}
 body{
+    color: black;
     min-height: 0;
 }
 
@@ -7,7 +10,7 @@ body{
 
 
 header{
-    background-color: rgb(86, 33, 123);
+    background-color: rgb(61, 33, 123);
     display: flex;
     justify-content: space-between;
     flex-direction: row;
