@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { fetchAllMembers } from "../sanity/membersServices";
+import "../styles/personkort.scss"
 
 
 export default function Home(){
@@ -27,7 +28,7 @@ export default function Home(){
               alt={person.medlemsnavn}
             />
             <h3>{person.medlemsnavn}</h3>
-            <p>{person.epost}</p>
+            <a>{person.epost}</a>
           </article>
         ))}
       </section>

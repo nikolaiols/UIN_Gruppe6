@@ -23,6 +23,12 @@ export const medlem ={
             title: "Loggforing",
             type: "text"
         },
+        {
+            name: "interesser",
+            title: "Interesser",
+            type: "array",
+            of: [{ type: "string" }],
+        }
 
     ]
      

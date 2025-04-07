@@ -11,3 +11,13 @@ export async function fetchAllMembers() {
         
         return data;
 }
+
+export const fetchMemberByName = async (name) => {
+    const query = `*[_type == "medlem" && medlemsnavn == $name][0]{
+      medlemsnavn,
+      "image": bilde,
+      interesser,
+      beskrivelse
+    }`;
+    return await client.fetch(query, { name });
+  };
