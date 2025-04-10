@@ -21,7 +21,7 @@ const Arbeidslogg = () => {
         .then((data) => {
           const poster = data.flatMap((medlemsnavn) =>
             (medlem.loggforinger || []).map((logg) => ({
-              navn: medlem.navn,
+              navn: medlem.medlemsnavn,
               tekst: logg.tekst,
               timer: logg.timer,
               dato: logg._createdAt,
