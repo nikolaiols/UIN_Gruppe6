@@ -3,9 +3,8 @@ import {Routes, Route} from 'react-router-dom'
 import './App.css'
 import Layout from './components/Layout'
 import Home from './components/Home'
-import Asrin from './components/Asrin'
-import Kristoffer from './components/Kristoffer'
-import Nikolai from './components/Nikolai'
+import Profiler from './components/Profiler'
+
 
 
 function App() {
@@ -15,9 +14,9 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/asrin" element={<Asrin/>}></Route>
-        <Route path="/kristoffer" element={<Kristoffer/>}></Route>
-        <Route path="/nikolai" element={<Nikolai/>}></Route>
+        <Route path="/profiler" element={<Profiler/>}></Route>
+        <Route path="/profiler1" element={<Profiler name={"Kristoffer"}/>}></Route>
+        <Route path="/profiler2" element={<Profiler name={"Nikolai"}/>}></Route>
       </Routes>
     </Layout>
     </>
