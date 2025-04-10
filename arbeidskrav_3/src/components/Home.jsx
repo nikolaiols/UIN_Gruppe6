@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchAllMembers } from "../sanity/membersServices";
 import "../styles/personkort.scss"
+import Arbeidslogg from "../components/Arbeidslogg";
 
 
 export default function Home(){
@@ -32,6 +33,7 @@ export default function Home(){
           </article>
         ))}
       </section>
+      <Arbeidslogg />
     </>
     );
 }

@@ -19,17 +19,35 @@ export const medlem ={
             type: "string"
         },
         {
-            name: "loggforing",
-            title: "Loggforing",
-            type: "text"
-        },
-        {
             name: "interesser",
             title: "Interesser",
             type: "array",
             of: [{ type: "string" }],
-        }
+        },
+        {
+            name: "loggforinger",
+            title: "Loggføringer",
+            type: "array",
+            of: [
+              {
+                type: "object",
+                fields: [
+                  {
+                    name: "tekst",
+                    title: "Arbeidsoppgave",
+                    type: "string",
+                  },
+                  {
+                    name: "timer",
+                    title: "Antall timer",
+                    type: "number",
+                  }
+                ]
+              }
+            ]
+          }
 
     ]
      
 }
+
