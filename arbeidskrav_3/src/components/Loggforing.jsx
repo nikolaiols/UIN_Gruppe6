@@ -1,8 +1,15 @@
 const Loggforing = ({ navn, tekst, timer, dato }) => {
-    const formatertDato = new Date(dato).toISOString().split("T")[0];
+
+  const formatertDato = dato
+  ? new Date(dato).toISOString().split("T")[0]
+  : "Ukjent dato";
+
     return (
       <article className="logg-item">
-        <p>{`${formatertDato}, ${navn}, ${tekst}, ${timer} timer`}</p>
+        <p>{`${formatertDato}`}</p>
+        <p>{`${navn}`}</p>
+        <p>{`${tekst}`}</p>
+        <p>{`${timer} timer`}</p>
       </article>
     );
   };

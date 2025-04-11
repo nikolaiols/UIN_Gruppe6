@@ -1,0 +1,29 @@
+.arbeidslogg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+        article{
+            margin: 5px;
+            max-height: 40px;
+            h2{
+                size: 30px;
+            }
+        }
+
+      
+}
+.logg-item{
+    min-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+    border: none;
+    background-color: rgb(236, 232, 232);
+    
+        p{
+            display: flex;
+            justify-content: center;
+            margin: inherit;
+            text-align: center;
+        }
+}

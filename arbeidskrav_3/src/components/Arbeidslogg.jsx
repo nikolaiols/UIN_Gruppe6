@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { client } from "../sanity/client"; 
 import Loggforing from "./Loggforing";
+import '../styles/arbeidslogg.scss'; 
 
 const Arbeidslogg = () => {
     const [loggposter, setLoggposter] = useState([]);
@@ -8,9 +9,9 @@ const Arbeidslogg = () => {
     useEffect(() => {
       client
         .fetch(`
-          *[_type == "medlemsnavn"]{
+          *[_type == "medlem"]{
             _id,
-            navn,
+             medlemsnavn,
             loggforinger[]{
               tekst,
               timer,
@@ -19,7 +20,7 @@ const Arbeidslogg = () => {
           }
         `)
         .then((data) => {
-          const poster = data.flatMap((medlemsnavn) =>
+          const poster = data.flatMap((medlem) =>
             (medlem.loggforinger || []).map((logg) => ({
               navn: medlem.medlemsnavn,
               tekst: logg.tekst,
@@ -28,11 +29,12 @@ const Arbeidslogg = () => {
               id: medlem._id,
             }))
           );
-  
+         
          
           poster.sort((a, b) => new Date(b.dato) - new Date(a.dato));
   
           setLoggposter(poster);
+          console.log(poster)
         });
     }, []);
   

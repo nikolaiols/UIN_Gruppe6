@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchAllMembers } from "../sanity/membersServices";
 import value from "../components/Layout"
+import Arbeidslogg from "./Arbeidslogg";
 
 export default function Profiler({name}){
     const [medlem, setMedlem] = useState([]);
@@ -35,6 +36,7 @@ export default function Profiler({name}){
               </article>
             ))}
           </section>
+          <Arbeidslogg />
         </>
     )
 

@@ -18,7 +18,7 @@ export default function Layout({children}){
             <nav>
                 <ul>
                     <li><button onClick={handleClick}><Link to="/">Hjem</Link></button></li>
-                    <li><button onClick={handleClick}><Link to="/profiler">Asrin</Link></button></li>
+                    <li><button onClick={handleClick}><Link to="/profiler">Peter</Link></button></li>
                     <li><button onClick={handleClick}><Link to="/profiler1">Kristoffer</Link></button></li>
                     <li><button onClick={handleClick}><Link to="/profiler2">Nikolai</Link></button></li>
                 </ul>

@@ -19,9 +19,9 @@ export default function Home(){
     return (
         <>
         <h2>Gruppemedlemmer</h2>
-      <section>
+      <section >
         {medlem.map((person) => (
-          <article
+          <article 
             key={person._id}
            >
             <img

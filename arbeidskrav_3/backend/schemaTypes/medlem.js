@@ -41,6 +41,11 @@ export const medlem ={
                     name: "timer",
                     title: "Antall timer",
                     type: "number",
+                  },
+                  {
+                    name: "dato",
+                    title: "Dato",
+                    type: "datetime",
                   }
                 ]
               }
