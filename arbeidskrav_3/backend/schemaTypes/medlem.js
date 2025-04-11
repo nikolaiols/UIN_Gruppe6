@@ -19,6 +19,11 @@ export const medlem ={
             type: "string"
         },
         {
+          name: "about",
+          title: "Om meg",
+          type: "text"
+      },
+        {
             name: "interesser",
             title: "Interesser",
             type: "array",

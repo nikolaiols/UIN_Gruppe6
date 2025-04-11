@@ -7,7 +7,8 @@ export async function fetchAllMembers() {
         loggforing,
         epost,
         image{asset ->{ _id, url }},
-        interesser
+        interesser,
+        about
         }`);
         
         return data;

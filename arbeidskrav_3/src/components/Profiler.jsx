@@ -32,8 +32,11 @@ export default function Profiler({name}){
                   src={person.image?.asset?.url}
                   alt={person.medlemsnavn}
                 />
-                <h3>{person.medlemsnavn}</h3>
-                <a>{person.epost}</a>
+              </article>
+              <article>
+              <h3>{person.medlemsnavn}</h3>
+              <h3>Om meg</h3>
+              <p>{person.about}</p>
               </article>
               </>
             ))}
@@ -41,7 +44,7 @@ export default function Profiler({name}){
 
           <section>
           {filteredMedlem.map((person) => (
-            <article key={person._id + "-interesser"}>
+            <article key={`${person._id} -interesser`}>
               <h3>Interesser</h3>
               {person.interesser && person.interesser.length > 0 && (
                 <ul>
