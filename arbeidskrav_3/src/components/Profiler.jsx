@@ -42,9 +42,17 @@ export default function Profiler({name}){
             ))}
           </section>
 
-          <section>
+          <section className="interesser">
           {filteredMedlem.map((person) => (
+<<<<<<< Updated upstream
             <article key={`${person._id} -interesser`}>
+=======
+<<<<<<< HEAD
+            <article key={person._id}>
+=======
+            <article key={`${person._id} -interesser`}>
+>>>>>>> 04be83fbfcaaf0b8c7a2d7c13c256d357866a9c8
+>>>>>>> Stashed changes
               <h3>Interesser</h3>
               {person.interesser && person.interesser.length > 0 && (
                 <ul>
