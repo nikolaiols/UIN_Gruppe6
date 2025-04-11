@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchAllMembers } from "../sanity/membersServices";
 import value from "../components/Layout"
 import Arbeidslogg from "./Arbeidslogg";
+import "../styles/profil.scss"
 
 export default function Profiler({name}){
     const [medlem, setMedlem] = useState([]);
@@ -42,17 +43,9 @@ export default function Profiler({name}){
             ))}
           </section>
 
-          <section className="interesser">
+          <section>
           {filteredMedlem.map((person) => (
-<<<<<<< Updated upstream
             <article key={`${person._id} -interesser`}>
-=======
-<<<<<<< HEAD
-            <article key={person._id}>
-=======
-            <article key={`${person._id} -interesser`}>
->>>>>>> 04be83fbfcaaf0b8c7a2d7c13c256d357866a9c8
->>>>>>> Stashed changes
               <h3>Interesser</h3>
               {person.interesser && person.interesser.length > 0 && (
                 <ul>
