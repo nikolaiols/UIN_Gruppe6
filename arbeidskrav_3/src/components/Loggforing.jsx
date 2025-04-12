@@ -1,17 +1,18 @@
 const Loggforing = ({ navn, tekst, timer, dato }) => {
+  const formatertDato = new Date(dato).toLocaleDateString("no-NO", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  });
 
-  const formatertDato = dato
-  ? new Date(dato).toISOString().split("T")[0]
-  : "Ukjent dato";
+  return (
+    <article className="logg-item">
+      <p>{formatertDato}</p>
+      <p>{navn}</p>
+      <p>{tekst}</p>
+      <p>{timer} timer</p>
+    </article>
+  );
+};
 
-    return (
-      <article className="logg-item">
-        <p>{`${formatertDato}`}</p>
-        <p>{`${navn}`}</p>
-        <p>{`${tekst}`}</p>
-        <p>{`${timer} timer`}</p>
-      </article>
-    );
-  };
-  
-  export default Loggforing;
+export default Loggforing;

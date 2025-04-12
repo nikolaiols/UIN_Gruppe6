@@ -54,7 +54,7 @@ export default function Profiler({name}){
               </>
             ))}
           </section>
-          <Arbeidslogg />
+          <Arbeidslogg filterNavn={name} />
         </>
     )
 
