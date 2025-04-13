@@ -20,7 +20,7 @@ export default function Profiler({name}){
         return (
           
            <> 
-             <h1>profiler</h1>
+             
             {console.log(medlem.map((m)=>m.medlemsnavn))}
             {console.log(name)}
           <section className="profil">

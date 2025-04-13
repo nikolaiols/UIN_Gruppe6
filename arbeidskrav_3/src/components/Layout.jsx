@@ -14,7 +14,7 @@ export default function Layout({children}){
     return(
         <>       
          <header className="header-content">
-            <h1><Link to="/">GRUPPENAVN</Link></h1>
+            <h1><Link to="/">Niko&Kris</Link></h1>
             <nav>
                 <ul>
                     <li><button onClick={handleClick}><Link to="/">Hjem</Link></button></li>
