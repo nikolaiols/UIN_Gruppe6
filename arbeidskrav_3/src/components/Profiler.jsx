@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { fetchAllMembers } from "../sanity/membersServices";
-import value from "../components/Layout"
 import Arbeidslogg from "./Arbeidslogg";
 import "../styles/profil.scss"
 
@@ -19,13 +18,13 @@ export default function Profiler({name}){
         const filteredMedlem = medlem.filter((member)=> member.medlemsnavn == name)
         return (
           
-           <> 
+        <>   
              
             {console.log(medlem.map((m)=>m.medlemsnavn))}
             {console.log(name)}
-          <section className="profil">
+         
             {filteredMedlem.map((person) => (
-              <>
+              <section key={person._id} className="profil">
               <article className="bilde"
                 key={person._id}
                >
@@ -51,9 +50,9 @@ export default function Profiler({name}){
                 )}
               </article>
               </div>
-              </>
+              </section>
             ))}
-          </section>
+         
           <Arbeidslogg filterNavn={name} />
         </>
     )
