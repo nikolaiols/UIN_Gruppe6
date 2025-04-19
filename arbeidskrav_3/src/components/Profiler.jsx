@@ -15,7 +15,7 @@ export default function Profiler({name}){
         getAllMembers();
       }, []);
       
-        const filteredMedlem = medlem.filter((member)=> member.medlemsnavn == name)
+       const filteredMedlem = medlem.filter((member)=> member.medlemsnavn == name)
         return (
           
         <>   

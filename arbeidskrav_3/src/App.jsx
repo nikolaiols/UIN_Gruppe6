@@ -7,6 +7,7 @@ import Profiler from './components/Profiler'
 
 
 
+
 function App() {
 
   return (
@@ -15,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/profiler" element={<Profiler name={"Peter"}/>}></Route>
-        <Route path="/profiler1" element={<Profiler name={"Kristoffer"}/>}></Route>
+        <Route path= "/profiler1" element={<Profiler name={"Kristoffer"}/>}></Route>
         <Route path="/profiler2" element={<Profiler name={"Nikolai"}/>}></Route>
       </Routes>
     </Layout>
