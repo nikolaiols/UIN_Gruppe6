@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { fetchAllMembers } from "../sanity/membersServices";
 import "../styles/personkort.scss"
 import Arbeidslogg from "../components/Arbeidslogg";
+import { Link } from "react-router-dom";
 
 
 export default function Home(){
@@ -21,6 +22,8 @@ export default function Home(){
         <h2>Gruppemedlemmer</h2>
       <section >
         {medlem.map((person) => (
+
+      <Link to={`/profil/${person._id}`}>
           <article 
             key={person._id}
            >
@@ -29,8 +32,9 @@ export default function Home(){
               alt={person.medlemsnavn}
             />
             <h3>{person.medlemsnavn}</h3>
-            <a>{person.epost}</a>
+            <p>{person.epost}</p>
           </article>
+           </Link>
         ))}
       </section>
       <Arbeidslogg />

@@ -2,12 +2,6 @@
 import { Link } from "react-router-dom";
 import "../styles/layout.scss"
 
-export const handleClick = (e) => {
-    const value = e.target.innerText;
-    console.log("Verdi fra knapp:", value)
-    return value
-  };
-
 export default function Layout({children}){
     
     
@@ -17,10 +11,10 @@ export default function Layout({children}){
             <h1><Link to="/">Niko&Kris</Link></h1>
             <nav>
                 <ul>
-                    <li><button onClick={handleClick}><Link to="/">Hjem</Link></button></li>
-                    <li><button onClick={handleClick}><Link to="/profiler">Peter</Link></button></li>
-                    <li><button onClick={handleClick}><Link to="/profiler1">Kristoffer</Link></button></li>
-                    <li><button onClick={handleClick}><Link to="/profiler2">Nikolai</Link></button></li>
+                    <li><button><Link to="/">Hjem</Link></button></li>
+                    <li><button><Link to="/profiler">Peter</Link></button></li>
+                    <li><button><Link to="/profiler1">Kristoffer</Link></button></li>
+                    <li><button><Link to="/profiler2">Nikolai</Link></button></li>
                 </ul>
             </nav>
         </header>
