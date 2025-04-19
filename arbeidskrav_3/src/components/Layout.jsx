@@ -12,8 +12,8 @@ export default function Layout({children}){
             <nav>
                 <ul>
                     <li><button><Link to="/">Hjem</Link></button></li>
-                    <li><button><Link to="/profiler">Peter</Link></button></li>
-                    <li><button><Link to= "/profiler1">Kristoffer</Link></button></li>
+                    <li><button><Link to="/profiler1">Peter</Link></button></li>
+                    <li><button><Link to= "/profiler0">Kristoffer</Link></button></li>
                     <li><button><Link to="/profiler2">Nikolai</Link></button></li>
                 </ul>
             </nav>

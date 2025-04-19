@@ -21,11 +21,11 @@ export default function Home(){
         <>
         <h2>Gruppemedlemmer</h2>
       <section >
-        {medlem.map((person) => (
+        {medlem.map((person, index) => (
 
-      <Link to={`/profil/${person._id}`}>
+      <Link to={`/profiler${index}`} key={person._id}>
           <article 
-            key={person._id}
+            
            >
             <img
               src={person.image?.asset?.url}
