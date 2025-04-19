@@ -22,7 +22,7 @@ export default function Layout({children}){
         {children}
         </main>
         <footer>
-        footer!
+        ™NIKO&KRIS
         </footer>
         </>
 
